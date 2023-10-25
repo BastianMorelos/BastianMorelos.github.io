@@ -1,0 +1,244 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mi Primera Pagina Web</title>
+<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	body{
+	background-color: khaki
+	}
+	 header,nav,main,footer{
+        width: 960px;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    header{
+        height: 50px;
+        background-color: olivedrab;
+        text-align: center;
+    }
+     nav{
+        height: auto;
+		padding: 20px;
+        background-color: cadetblue;
+    }
+    main{
+        height: auto;
+        background-color: darkolivegreen;
+		padding-bottom: 50px;
+		padding-top: 50px;
+    }
+    article{
+       height: auto;
+        margin: 50px;
+        padding-bottom: 25px;
+		padding-top: 25px;
+		padding-left: 25px;
+		padding-right: 25px;
+        background-color: darkgreen;
+        text-align: justify;
+    }
+    footer{
+        background-color: yellowgreen;
+        height: 60px;
+        text-align: center;
+        font-size: 18px;
+    }
+	img{
+		
+	}
+	h1{
+	color: honeydew;
+    font-family: sans-serif;  
+	}
+	h2{
+	color: floralwhite;
+    font-family: sans-serif;
+	}
+    h3{
+    color: burlywood;
+    font-family: cursive;
+    }
+	h6{
+	color:darkblue;
+    font-family: sans-serif;
+	}
+    p{
+    color: black;
+    font-family: sans-serif;
+    }
+    ul{
+    color: aliceblue;
+    font-family: sans-serif;
+    }
+    ol{
+    color: aliceblue;
+    font-family: sans-serif;
+    }
+	a {
+		text-decoration: none;
+		}
+	a hover {
+			color: aliceblue;
+	}
+	a link {
+		color: aquamarine;
+	}
+	a visited {
+    color: #AEF7F7;
+	}
+	a active{ 
+		color: blue;
+	}
+	nav ul{
+		text-align: center;
+	}
+	nav ul li{
+		width: 10%;
+    list-style-type: none;
+    display: inline-block;
+    margin: 10px 20px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #4E8284;
+    color: color #FFFFFF;
+	}
+	nav ul li:link{
+    background-color: #70BABC;
+    pading: 10px;
+    border-radius: 20px;
+	color: azure;
+	}
+	nav ul li:hover{
+	background-color: aquamarine;
+    pading: 10px;
+    border-radius: 20px;
+    color: aquamarine;
+	}
+	nav ul li:active{
+    background-color: #AB508B;
+    padding: 10px;
+    border-radius: 20px;
+    color: #73D9D9;
+	}
+	nav ul li:visited{
+		background-color: color #304168;
+		padding: 10px;
+		border-radius: 20px;
+		color: cyan;
+	}
+.formulario1 {
+	width: 50%;
+	height: auto;
+	background-color: bisque;
+	padding: 30px;
+	margin: 0 auto;
+}
+.respuesta {
+    display: block;
+    background-color: #506BAB;
+    color: #EDEDED;
+    width: 100%;
+}
+.desplegable {
+    background-color: #7D9BE1;
+    display: block;
+    text-align: left;
+    margin-left: 0px;
+    width: 100%;
+}
+.data {
+    display: block;
+}
+.texto {
+	color: aliceblue;
+}
+</style>
+<link href="../css/cdnjs.cloudflare.com_ajax_libs_animate.css_4.1.1_animate.min.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<header>
+	<h1>Quiero Conocerte</h1>
+</header>
+    <nav>
+<ul>
+    <li><a href="mi_primera_pagina.html">Inicio</a></li>
+    <li><a href="mi_familia.html">Mi Familia</a></li>
+    <li><a href="mis_hobbies.html">Mis Hobbies</a></li>
+    <li><a href="mis_amigos.html">Mis Amigos</a></li>
+    <li><a href="mis_artistas_favoritos.html">Artistas Fav</a></li>
+	<li><a href="quiero_conocerte.html">Quiero Conocerte</a></li>
+</ul>
+    </nav>
+<main>
+<section>
+<article>
+	<h2>Quiero Conocerte</h2>
+	<p class="texto">Muchas gracias por tomarte el tiempo y visitar mi página web. Este es un pequeño proyecto con el cual le quiero compartir aspectos básicos de mi vida al mundo. Ahora yo quisiera saber un poco sobre mi querido lector.</p>
+	
+</article>
+<article class="formulario1">
+	<form method="get" action="mi_primera_pagina.html">
+		
+	<label for="nombre">Nombre</label>
+	<input name="nombre" type="text" class="respuesta" id="nombre">
+	<label for="genero">Genero</label>
+	<label for="masculino">Masculino</label>
+	<input type="radio" id="masculino" name="genero">
+	<label for="femenino">Femenino</label>
+	<input type="radio" id="femenino" name="genero">
+	<label for="región" class="data">Región:</label>
+	<select name="región" class="desplegable" id="región">
+		<option value="America">América</option>
+		<option value="Asia">Asia</option>
+		<option value="Africa">África</option>
+		<option value="Europa">Europa</option>
+		<option value="Oceania">Oceanía</option>
+	</select>
+	<label for="¿Qué prefieres?">¿Qué prefieres?</label>
+	<select name="¿Qué prefieres?" class="desplegable" id="¿Qué prefieres?">
+		<option value="dulce">Dulce</option>
+		<option value="salado">Salado</option>
+		<option value="picoso">Picoso</option>
+	</select>
+	<label for="¿Cuál es tu hobbie?">¿Cuál es tu hobbie?</label>
+	<input name="¿Cuál es tu hobbie?" type="text" class="respuesta" id="¿Cuál es tu hobbie?">
+	<label for="Color Favorito">Color Favorito</label>
+	<select name="colores" class="desplegable" id="color favorito">
+		<option value="Rojo">Rojo</option>
+		<option value="Azul">Azul</option>
+		<option value="Amarillo">Amarillo</option>
+		<option value="Verde">Verde</option>
+		<option value="Naranja">Naranja</option>
+		<option value="Cafe">Café</option>
+		<option value="Morado">Morado</option>
+		<option value="Negro">Negro</option>
+		<option value="Rosa">Rosa</option>
+		<option value="Blanco">Blanco</option>
+	</select>
+		<p>¿Qué mascota tienes o prefieres?</p>
+	<input type="checkbox" id="mascota1" name="mascota" value="Perro">
+	<label for="mascota">Perro</label><br>
+	<input type="checkbox" id="mascota2" name="mascota" value="Gato">
+	<label for="mascota">Gato</label><br>
+	<input type="checkbox" id="mascota3" name="mascota" value="Pez">
+	<label for="mascota">Pez</label><br>
+	<input type="checkbox" id="mascota4" name="mascota" value="Ave">
+	<label for="mascota">Ave</label><br>
+		<label for="lugar">¿Dónde te gustaria vivir?</label>
+	<input name="lugar" type="text" class="respuesta" id="lugar">
+		<input type="submit" value="Enviar">
+	</form>
+</article>
+</section>
+</main>	
+</body>
+</html>
